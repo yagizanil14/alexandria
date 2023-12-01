@@ -1,0 +1,156 @@
+.welcome {
+  position: relative;
+  z-index: 10;
+  background: #e5e5e5;
+  width: 100%;
+  height: 100%;
+  .welcomeWr {
+    width: 96%;
+    margin: auto;
+    .welcomeContentWr {
+      width: 55%;
+      margin: auto;
+      .headTitle1 {
+        margin-top: 1rem;
+        font-family: mediumSans, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 1;
+        text-align: center;
+        letter-spacing: -0.06em;
+        color: rgba(32, 45, 33, 1);
+        padding: 1rem 0;
+      }
+      .desc {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1.5rem 0;
+        p {
+          width: 48%;
+          font-family: italicSans, sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 15px;
+          line-height: 122%;
+          letter-spacing: -0.03em;
+          color: #f1f3e6;
+          text-indent: 20px;
+          color: rgba(32, 45, 33, 1);
+        }
+      }
+      .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 2rem;
+        .card {
+          width: 30%;
+          .cardTopImage {
+            width: 100%;
+            margin-top: 1.5rem;
+          }
+          .bottomImages {
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: space-between;
+            width: 100%;
+            height: 100px;
+            h1 {
+              font-size: 1.125rem;
+              line-height: 1.75rem;
+              color: rgba(32, 45, 33, 1);
+              font-weight: 700;
+              font-family: mediumSans, sans-serif;
+            }
+            .cardBottomImage {
+              position: absolute;
+              width: 100px;
+              height: 110px;
+              object-fit: contain;
+              right: 0;
+            }
+          }
+          p {
+            color: rgba(32, 45, 33, 1);
+            font-size: 0.75rem;
+            line-height: 1rem;
+            margin-bottom: 0.5rem;
+            font-family: italicSans, sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            letter-spacing: -0.03em;
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
+    .hr {
+      display: block;
+      position: relative !important;
+      width: 100%;
+      border-bottom: 1.8px solid #202d21;
+      padding-top: 0.5rem;
+    }
+  }
+
+  .topShadow {
+    height: 50px;
+    opacity: 0.7;
+    background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.411),
+      transparent
+    );
+    z-index: 10;
+    right: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+}
+.cardButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  h1 {
+    position: absolute;
+    color: rgba(221, 224, 213, 1);
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-family: mediumSans;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .welcomeContentWr {
+    width: 90% !important;
+    .headTitle1 {
+      font-size: 45px !important;
+    }
+    .desc {
+      flex-direction: column !important;
+      p {
+        width: 100% !important;
+        margin-top: 1rem;
+      }
+    }
+    .cards {
+      flex-direction: column !important;
+      .card {
+        width: 100% !important;
+        .bottomImages {
+          margin-top: 1rem;
+        }
+        .cardButton {
+          svg {
+            width: 250px !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,205 @@
+.cardSection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 53%;
+  margin: auto;
+  z-index: 10;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem !important;
+  padding-bottom: 5rem;
+
+  .headTitle {
+    font-family: mediumSans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: -0.06em;
+    color: #e9ece1;
+    white-space: nowrap;
+  }
+  .cardImageWr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+    position: relative;
+    .headCardImage {
+      width: 60%;
+      z-index: 21;
+      margin-bottom: 2rem;
+      animation: up-down linear 4s;
+      animation-iteration-count: infinite;
+      transform-origin: 50% 50%;
+      -webkit-animation: up-down linear 4s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-transform-origin: 50% 50%;
+      -moz-animation: up-down linear 4s;
+      -moz-animation-iteration-count: infinite;
+      -moz-transform-origin: 50% 50%;
+      -o-animation: up-down linear 4s;
+      -o-animation-iteration-count: infinite;
+      -o-transform-origin: 50% 50%;
+      -ms-animation: up-down linear 4s;
+      -ms-animation-iteration-count: infinite;
+      -ms-transform-origin: 50% 50%;
+    }
+    svg {
+      z-index: 20;
+      position: absolute;
+      bottom: 0;
+      opacity: 0.3;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    .infos,
+    .action {
+      width: 48%;
+    }
+    .infos {
+      h1 {
+        color: rgba(221, 224, 213, 1);
+        line-height: 1.75rem;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-family: mediumSans, sans-serif;
+        margin-bottom: 0.5rem;
+      }
+      h2,
+      p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+        font-family: italicSans, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 122%;
+        letter-spacing: -0.03em;
+        color: #f1f3e6;
+      }
+    }
+    .action {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .videoImageSection {
+        cursor: pointer;
+        position: relative;
+        width: 100%;
+        height: 80%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        svg {
+          position: absolute;
+          top: 50%;
+          right: 50%;
+        }
+      }
+      button {
+        cursor: pointer;
+        background: transparent;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+          position: absolute;
+          color: rgba(221, 224, 213, 1);
+          font-size: 1.125rem;
+          line-height: 1.75rem;
+          font-family: italicSans, sans-serif;
+        }
+      }
+    }
+  }
+}
+@keyframes up-down {
+  0% {
+    transform: translate(1px, 10px);
+  }
+  50% {
+    transform: translate(1px, 25px);
+  }
+  100% {
+    transform: translate(1px, 10px);
+  }
+}
+@-moz-keyframes up-down {
+  0% {
+    transform: translate(1px, 10px);
+  }
+  50% {
+    transform: translate(1px, 25px);
+  }
+  100% {
+    transform: translate(1px, 10px);
+  }
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translate(1px, 10px);
+  }
+  50% {
+    transform: translate(1px, 25px);
+  }
+  100% {
+    transform: translate(1px, 10px);
+  }
+}
+
+@-o-keyframes up-down {
+  0% {
+    transform: translate(1px, 10px);
+  }
+  50% {
+    transform: translate(1px, 25px);
+  }
+  100% {
+    transform: translate(1px, 10px);
+  }
+}
+
+@-ms-keyframes up-down {
+  0% {
+    transform: translate(1px, 10px);
+  }
+  50% {
+    transform: translate(1px, 25px);
+  }
+  100% {
+    transform: translate(1px, 10px);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .cardSection {
+    width: 90%;
+    .headTitle {
+      font-size: 30px;
+    }
+    .cardImageWr {
+      position: relative;
+
+      svg {
+        height: 120px;
+        position: absolute !important;
+        bottom: 0 !important;
+      }
+    }
+  }
+}

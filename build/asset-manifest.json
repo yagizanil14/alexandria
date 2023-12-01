@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3f06e901.css",
+    "main.js": "/static/js/main.ca1c663f.js",
+    "static/media/card-top.png": "/static/media/card-top.e212ee861318bd2ea916.png",
+    "static/media/card-yatay-2.png": "/static/media/card-yatay-2.637b1dff99b18f9ee766.png",
+    "static/media/yatay-card-video-image.png": "/static/media/yatay-card-video-image.5aa6b24d1f43b8653244.png",
+    "static/media/wallet.png": "/static/media/wallet.9313b6328e433595e1cb.png",
+    "static/media/SourceSerif4-Regular.ttf": "/static/media/SourceSerif4-Regular.6d0c23b91d7f2f7b79e1.ttf",
+    "static/media/wallet.d32b738e.png": "/static/media/wallet.d32b738e.d32b738ef336c602fa30.png",
+    "static/media/SourceSerif4-MediumItalic.ttf": "/static/media/SourceSerif4-MediumItalic.99adcfb427fec4ce069b.ttf",
+    "static/media/card-2.jpg": "/static/media/card-2.d445e2addfa606cab0e5.jpg",
+    "static/media/card-3.jpg": "/static/media/card-3.d510828f577f00382b03.jpg",
+    "static/media/card-1.jpg": "/static/media/card-1.1e998d02303b29f5e8bf.jpg",
+    "static/media/b2.png": "/static/media/b2.f60e8e813140f81ad774.png",
+    "static/media/NewBaskervilleStd-Roman.0078fc15.woff": "/static/media/NewBaskervilleStd-Roman.0078fc15.0078fc1582cc3568b335.woff",
+    "static/media/card-1-bottom.png": "/static/media/card-1-bottom.966b73459d414f1fc34c.png",
+    "static/media/card-2-bottom.png": "/static/media/card-2-bottom.9259f3590cdcae4b98db.png",
+    "static/media/slick.a4e97f5a.eot": "/static/media/slick.a4e97f5a.a4e97f5a2a64f0ab1323.eot",
+    "index.html": "/index.html",
+    "main.3f06e901.css.map": "/static/css/main.3f06e901.css.map",
+    "main.ca1c663f.js.map": "/static/js/main.ca1c663f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f06e901.css",
+    "static/js/main.ca1c663f.js"
+  ]
+}

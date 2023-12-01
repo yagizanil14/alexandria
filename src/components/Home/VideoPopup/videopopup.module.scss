@@ -1,0 +1,28 @@
+.shadowBox {
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.videoPopup {
+  width: 800px;
+  background: transparent;
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+  .videoPopup {
+    width: 300px !important;
+  }
+}
